@@ -83,13 +83,7 @@ header a{
 #generalTopics_info{
     margin-top: 20px;
 }
-generalTopics_info div{
-    display: inline;
-    float: left;
-    text-align: center;
-    width: 30%;
-    padding: 10px;
-}
+
 .containerForTema{
     width: 80%;
     margin: auto;
