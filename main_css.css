@@ -1,0 +1,113 @@
+footer {
+    padding: 20px;
+    margin-top: 20px;
+    color: blcak;
+    background:yellow;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    border-top: 3px solid black;
+}
+#generalTopics_info {
+    overflow: hidden;
+}
+body{
+    font-family: sans-serif;
+    padding: 0px;
+    margin: 0px;
+    background-color: #f4f4f4;
+    direction: ltr;
+}
+ul{
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+li{
+    float: right;
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+ul li ul li a{
+color: black;
+font-size: 15px;
+}
+
+
+header{
+    padding-top: 30px;
+    width: 100%;
+    min-height: 70px;
+    color: white;
+    background: yellow;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    border-bottom: 3px solid black;
+
+
+}
+#forb{
+ 
+    background: red;
+
+}
+.forny{
+    background: lightskyblue;
+}
+
+.eko{
+    background-color:green;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+header nav{
+    margin-top: 40px;
+}
+header h1{
+    float: left;
+}
+header a{
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+}
+#generalTopics_info{
+    margin-top: 20px;
+}
+generalTopics_info div{
+    display: inline;
+    float: left;
+    text-align: center;
+    width: 30%;
+    padding: 10px;
+}
+.containerForTema{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    text-align: center;
+}
+
+.containerForTema div{
+    text-align: left;
+    margin: 10px;
+}
+.containerForTema h4{
+    text-align: left;
+}
+.box{
+    width: 120%;
+    display: inline;
+    margin: 10px;
+    padding-top: 10px;
+
+}
