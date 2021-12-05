@@ -18,7 +18,7 @@ body{
     background-color: #f4f4f4;
     direction: ltr;
 }
-ul{
+header ul{
     display: block;
     list-style-type: disc;
     margin-block-start: 1em;
@@ -27,12 +27,12 @@ ul{
     margin-inline-end: 0px;
     padding-inline-start: 40px;
 }
-li{
+header li{
     float: right;
     display: inline;
     padding: 0 20px 0 20px;
 }
-ul li ul li a{
+header ul li ul li a{
 color: black;
 font-size: 15px;
 }
