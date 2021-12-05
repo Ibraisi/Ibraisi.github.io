@@ -61,7 +61,10 @@ header{
 }
 
 .eko{
-    background-color:green;
+    background :green;
+}
+.karnk{
+     background :#FFD700;
 }
 
 .container{
