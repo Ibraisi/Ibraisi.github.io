@@ -1,14 +1,17 @@
+
 footer {
     padding: 20px;
     margin-top: 20px;
-    color: blcak;
     background : gray;
     text-align: center;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 20px; 
     border-top: 3px solid black;
 }
 
+/*
+    div for the Summary of the themes
+*/
 #generalTopics_info {
     overflow: hidden;
     font-family: 'Times New Roman', Times, serif;
@@ -21,6 +24,9 @@ body{
     background-color: #f4f4f4;
     direction: ltr;
 }
+/*
+    styling ul tag only in the header
+*/
 header ul{
     display: block;
     list-style-type: disc;
@@ -30,6 +36,9 @@ header ul{
     margin-inline-end: 0px;
     padding-inline-start: 40px;
 }
+/*
+    styling li tag only in the header
+*/
 header li{
     float: right;
     display: inline;
@@ -42,7 +51,9 @@ font-family: fantasy;
 text-transform: uppercase;
 }
 
-
+/*
+    styling a tag only in the header
+*/
 header{
     padding-top: 30px;
     width: 100%;
@@ -55,7 +66,10 @@ header{
     border-bottom: 3px solid black;
 
 
-}
+} 
+/*
+    giving every navbar a different color that fits with the theme
+*/
 #forb{
  
     background: red;
@@ -72,6 +86,9 @@ header{
      background :#FFD700;
 }
 
+/*
+    General container with width 80% 
+*/
 .container{
     width: 80%;
     margin: auto;
@@ -92,6 +109,9 @@ header a{
     margin-top: 20px;
 }
 
+/*
+   container for every theme with width 85% 
+*/
 .containerForTema{
     width: 85%;
     margin: auto;
@@ -106,6 +126,9 @@ header a{
 .containerForTema h4{
     text-align: left;
 }
+/*
+    box dif for the images 
+*/
 .box{
     width: 120%;
     display: inline;
