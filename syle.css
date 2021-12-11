@@ -44,6 +44,9 @@ header li{
     display: inline;
     padding: 0 20px 0 20px;
 }
+/*
+    styling a tag only in the header
+*/
 header ul li ul li a{
 color: black;
 font-size: 15px;
@@ -51,9 +54,7 @@ font-family: fantasy;
 text-transform: uppercase;
 }
 
-/*
-    styling a tag only in the header
-*/
+
 header{
     padding-top: 30px;
     width: 100%;
@@ -87,7 +88,7 @@ header{
 }
 
 /*
-    General container with width 80% 
+    General container div with width 80% 
 */
 .container{
     width: 80%;
@@ -110,7 +111,7 @@ header a{
 }
 
 /*
-   container for every theme with width 85% 
+   container div for every theme with width 85% 
 */
 .containerForTema{
     width: 85%;
@@ -127,7 +128,7 @@ header a{
     text-align: left;
 }
 /*
-    box dif for the images 
+    box div for the images 
 */
 .box{
     width: 120%;
