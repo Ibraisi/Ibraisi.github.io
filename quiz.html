@@ -4,6 +4,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="syle.css">
+    <script type="text/javascript" src="script.js"></script>
     <title>HållbarUtveckling</title>
 </head>
 <body>
@@ -16,7 +17,7 @@
                 <li><a href="#Teman">Teman</a>
                     <ul>
                         <li><a href="tema2.html">Förbränning</a></li>
-                        <li><a href="tema4.html">Framtida energier</a></li>
+                        <li><a href="tema4.html">Ekologiskt fotavtryck</a></li>
                         <li><a href="tema3.html">Kärnkraft</a></li>
                         <li><a href="tema1.html">Förnyelsebara</a></li>
                     </ul>
@@ -38,100 +39,122 @@
             <p>
                 Quizen består utav 10 frågor med 3 möjliga svar vardera.
                 Markera dina svar och tryck sedan på "Rätta" längst ner.
-                OBS: Prototyp, ej fungerande
-            </p>
+            </p><br>
+            <p id="quizText"></p>
 
-            <div class="questionClass">
-                Fråga 1<br>
-                <input type="radio" name="q1" id="a1" value="a1">
-                <label for="a1">Svar 1</label><br>
-                <input type="radio" name="q1" id="a2" value="a2">
-                <label for="a2">Svar 2</label><br>
-                <input type="radio" name="q1" id="a3" value="a3">
-                <label for="a3">Svar 3</label><br>
-            </div>
-            <div class="questionClass">
-                Fråga 2<br>
-                <input type="radio" name="q1" id="a1" value="a1">
-                <label for="a1">Svar 1</label><br>
-                <input type="radio" name="q1" id="a2" value="a2">
-                <label for="a2">Svar 2</label><br>
-                <input type="radio" name="q1" id="a3" value="a3">
-                <label for="a3">Svar 3</label><br>
-            </div>
-            <div class="questionClass">
-                Fråga 3<br>
-                <input type="radio" name="q1" id="a1" value="a1">
-                <label for="a1">Svar 1</label><br>
-                <input type="radio" name="q1" id="a2" value="a2">
-                <label for="a2">Svar 2</label><br>
-                <input type="radio" name="q1" id="a3" value="a3">
-                <label for="a3">Svar 3</label><br>
-            </div>
-            <div class="questionClass">
-                Fråga 4<br>
-                <input type="radio" name="q1" id="a1" value="a1">
-                <label for="a1">Svar 1</label><br>
-                <input type="radio" name="q1" id="a2" value="a2">
-                <label for="a2">Svar 2</label><br>
-                <input type="radio" name="q1" id="a3" value="a3">
-                <label for="a3">Svar 3</label><br>
-            </div>
-            <div class="questionClass">
-                Fråga 5<br>
-                <input type="radio" name="q1" id="a1" value="a1">
-                <label for="a1">Svar 1</label><br>
-                <input type="radio" name="q1" id="a2" value="a2">
-                <label for="a2">Svar 2</label><br>
-                <input type="radio" name="q1" id="a3" value="a3">
-                <label for="a3">Svar 3</label><br>
-            </div>
-            <div class="questionClass">
-                Fråga 6<br>
-                <input type="radio" name="q1" id="a1" value="a1">
-                <label for="a1">Svar 1</label><br>
-                <input type="radio" name="q1" id="a2" value="a2">
-                <label for="a2">Svar 2</label><br>
-                <input type="radio" name="q1" id="a3" value="a3">
-                <label for="a3">Svar 3</label><br>
-            </div>
-            <div class="questionClass">
-                Fråga 7<br>
-                <input type="radio" name="q1" id="a1" value="a1">
-                <label for="a1">Svar 1</label><br>
-                <input type="radio" name="q1" id="a2" value="a2">
-                <label for="a2">Svar 2</label><br>
-                <input type="radio" name="q1" id="a3" value="a3">
-                <label for="a3">Svar 3</label><br>
-            </div>
-            <div class="questionClass">
-                Fråga 8<br>
-                <input type="radio" name="q1" id="a1" value="a1">
-                <label for="a1">Svar 1</label><br>
-                <input type="radio" name="q1" id="a2" value="a2">
-                <label for="a2">Svar 2</label><br>
-                <input type="radio" name="q1" id="a3" value="a3">
-                <label for="a3">Svar 3</label><br>
-            </div>
-            <div class="questionClass">
-                Fråga 9<br>
-                <input type="radio" name="q1" id="a1" value="a1">
-                <label for="a1">Svar 1</label><br>
-                <input type="radio" name="q1" id="a2" value="a2">
-                <label for="a2">Svar 2</label><br>
-                <input type="radio" name="q1" id="a3" value="a3">
-                <label for="a3">Svar 3</label><br>
-            </div>
-            <div class="questionClass">
-                Fråga 10<br>
-                <input type="radio" name="q1" id="a1" value="a1">
-                <label for="a1">Svar 1</label><br>
-                <input type="radio" name="q1" id="a2" value="a2">
-                <label for="a2">Svar 2</label><br>
-                <input type="radio" name="q1" id="a3" value="a3">
-                <label for="a3">Svar 3</label><br>
-            </div>
-            <input type="button" id="knapp" value="Rätta">
+            <form id="questionForm">
+                <div class="questionClass" id="q1Div">
+                    Fråga 1:<br>
+                    Ungefär hur stor del av hushållsavfallet i Sverige används inom energiåtervinning?<br>
+                    <input type="radio" name="q1" id="a1" value="1">
+                    <label for="a1">Cirka en tredjedel av hushållsavfallet</label><br>
+                    <input type="radio" name="q1" id="a2" value="2">
+                    <label for="a2">Cirka hälften av hushållsavfallet</label><br>
+                    <input type="radio" name="q1" id="a3" value="3">
+                    <label for="a3">Nästan all hushållsavfall används</label><br>
+                </div>
+
+                <div class="questionClass" id="q2Div">
+                    Fråga 2:<br>
+                    Vad kan hända när man bränner osorterat avfall?<br>
+                    <input type="radio" name="q2" id="a1" value="1">
+                    <label for="a1">Miljöfarliga gaser släpps fria</label><br>
+                    <input type="radio" name="q2" id="a2" value="2">
+                    <label for="a2">Miljöfarliga vätskor bildas och hamnar i vattendrag</label><br>
+                    <input type="radio" name="q2" id="a3" value="3">
+                    <label for="a3">Det är ingen fara att bränna osorterat avfall</label><br>
+                </div>
+
+                <div class="questionClass" id="q3Div">
+                    Fråga 3:<br>
+                    Vilken fornybar energikälla producerar mest el i Sverige?<br>
+                    <input type="radio" name="q3" id="a1" value="1">
+                    <label for="a1">Vindkraft</label><br>
+                    <input type="radio" name="q3" id="a2" value="2">
+                    <label for="a2">Vattenkraft</label><br>
+                    <input type="radio" name="q3" id="a3" value="3">
+                    <label for="a3">Solkraft</label><br>
+                </div>
+
+                <div class="questionClass" id="q4Div">
+                    Fråga 4:<br>
+                    Vilket förnybart energislag är billigast att bygga ut i Sverige?<br>
+                    <input type="radio" name="q4" id="a1" value="1">
+                    <label for="a1">Vindkraft</label><br>
+                    <input type="radio" name="q4" id="a2" value="2">
+                    <label for="a2">Vattenkraft</label><br>
+                    <input type="radio" name="q4" id="a3" value="3">
+                    <label for="a3">Solkraft</label><br>
+                </div>
+
+                <div class="questionClass" id="q5Div">
+                    Fråga 5:<br>
+                    Vilket material används huvudsakligen i dagens solceller?<br>
+                    <input type="radio" name="q5" id="a1" value="1">
+                    <label for="a1">Perskovit</label><br>
+                    <input type="radio" name="q5" id="a2" value="2">
+                    <label for="a2">Kisel</label><br>
+                    <input type="radio" name="q5" id="a3" value="3">
+                    <label for="a3">Trä</label><br>
+                </div>
+
+                <div class="questionClass" id="q6Div">
+                    Fråga 6:<br>
+                    Vilket av följande är en fördel med att bygga ett vindkraftstorn av trä?<br>
+                    <input type="radio" name="q6" id="a1" value="1">
+                    <label for="a1">Mindre koldioxidutsläpp</label><br>
+                    <input type="radio" name="q6" id="a2" value="2">
+                    <label for="a2">Längre livscykel</label><br>
+                    <input type="radio" name="q6" id="a3" value="3">
+                    <label for="a3">Mindre buller</label><br>
+                </div>
+
+                <div class="questionClass" id="q7Div">
+                    Fråga 7:<br>
+                    Vilket grundämne används i kärnkraft?<br>
+                    <input type="radio" name="q7" id="a1" value="1">
+                    <label for="a1">Plutionium</label><br>
+                    <input type="radio" name="q7" id="a2" value="2">
+                    <label for="a2">Uran</label><br>
+                    <input type="radio" name="q7" id="a3" value="3">
+                    <label for="a3">Thorium</label><br>
+                </div>
+
+                <div class="questionClass" id="q8Div">
+                    Fråga 8:<br>
+                    För hur många hushåll kan ett modernt kärnkraftverk producera energi åt i ett år?<br>
+                    <input type="radio" name="q8" id="a1" value="1">
+                    <label for="a1">1.3 - 2.9 miljoner</label><br>
+                    <input type="radio" name="q8" id="a2" value="2">
+                    <label for="a2">2.9 - 4.7 miljoner</label><br>
+                    <input type="radio" name="q8" id="a3" value="3">
+                    <label for="a3">130 - 290 tusen</label><br>
+                </div>
+
+                <div class="questionClass" id="q9Div">
+                    Fråga 9:<br>
+                    Vad heter kärnkraftverket som snart är färdigt byggt vid skrivandet av denna fråga?<br>
+                    <input type="radio" name="q9" id="a1" value="1">
+                    <label for="a1">Hamond District R</label><br>
+                    <input type="radio" name="q9" id="a2" value="2">
+                    <label for="a2">Clarksley Bay J</label><br>
+                    <input type="radio" name="q9" id="a3" value="3">
+                    <label for="a3">Hinkley Point C</label><br>
+                </div>
+
+                <div class="questionClass" id="q10Div">
+                    Fråga 10:<br>
+                    Hur påverkar vattenkraft våra ekosystem?<br>
+                    <input type="radio" name="q10" id="a1" value="1">
+                    <label for="a1">De hindrar vattenlevande djur att migrera genom strömmar</label><br>
+                    <input type="radio" name="q10" id="a2" value="2">
+                    <label for="a2">De orsakar mycket erosion och skadar land runt om sig</label><br>
+                    <input type="radio" name="q10" id="a3" value="3">
+                    <label for="a3">De främjar algblomning som tar död på sjögräs och rubbar ekosystemet</label><br>
+                </div>
+            </form>
+            <input type="button" id="knapp" value="Rätta" onclick="correct()"><br>
+            <input type="button" id="knapp2" value="Återställ" onclick="reset()">
         </div>
     </div>
     </section>
