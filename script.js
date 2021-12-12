@@ -32,7 +32,7 @@ var allQuestions = [
 	{
 		question: "Fråga 6",
 		choices: ["Svar 1", "Svar 2", "Svar 3"],
-		answer: "3",
+		answer: "1",
 		qVar: "q6"
 	},
 	{
